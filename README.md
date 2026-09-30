@@ -84,6 +84,37 @@ This approach reduces the risk of look-ahead bias and data leakage.
 | F1 Score | 76.41% |
 | ROC-AUC | 61.71% |
 
+## Key Results
+
+### Model Selection
+
+The hybrid model achieved the strongest mean rolling-validation ROC-AUC among the main technical modelling experiments. The final ensemble combines **70% Logistic Regression and 30% Gradient Boosting**.
+
+![Mean Rolling Validation ROC-AUC](results/figure_03_master_experiment_mean_roc_auc.png)
+
+### Final Untouched-Test Performance
+
+The locked model was evaluated on a final chronological test period that was not used during model selection, threshold selection, or hyperparameter tuning.
+
+![Final Test Performance Comparison](results/figure_04_final_test_metric_comparison.png)
+
+### ROC Analysis
+
+The final hybrid model achieved a test ROC-AUC of approximately **0.62**, slightly outperforming the standalone Logistic Regression model.
+
+![Final Test ROC Curves](results/figure_07_final_test_roc_curves.png)
+
+### Performance Uncertainty
+
+Moving-block bootstrap confidence intervals were used to quantify uncertainty while preserving temporal dependence in the financial time series.
+
+![Bootstrap Confidence Intervals](results/figure_08_hybrid_bootstrap_confidence_intervals.png)
+
+### Technical Indicator Relevance
+
+A consensus ranking was used to examine the relative relevance of the technical indicators across the modelling framework.
+
+![Technical Indicator Consensus Ranking](results/figure_09_technical_indicator_consensus_ranking.png)
 ## Prototype
 
 An interactive prototype was developed to allow users to enter the latest technical indicator values and receive:
