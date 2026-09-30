@@ -1,4 +1,7 @@
 # Gold Trend Forecasting using Hybrid Machine Learning
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://gold-trend-forecasting-ml-qb5rdxcjgm683bjdt9cjmu.streamlit.app/)
+
+> **Live Research Prototype:** Explore the deployed forecasting dashboard and generate 20-trading-day XAU/USD trend predictions using the 12 technical indicators.
 
 A hybrid machine learning framework for forecasting the **20-trading-day trend direction of XAU/USD (Gold)** using technical market indicators and time-series-aware validation.
 
