@@ -26,7 +26,7 @@ The weighting was selected based on validation performance using time-series-awa
 
 ## Technical Indicators
 
-The final model uses 12 technical indicators:
+The final locked model uses 12 technical features:
 
 1. RSI (14)
 2. Stochastic Fast %K
@@ -35,11 +35,11 @@ The final model uses 12 technical indicators:
 5. MACD
 6. MACD Signal
 7. Price Rate of Change
-8. OBV Flow (20)
-9. Distance from SMA50
-10. Distance from SMA200
+8. On-Balance Volume (OBV)
+9. 50-period Simple Moving Average
+10. 200-period Simple Moving Average
 11. Money Flow Index (14)
-12. Williams Accumulation/Distribution Flow (20)
+12. Williams Accumulation/Distribution
 
 ## Dataset
 
@@ -94,12 +94,12 @@ An interactive prototype was developed to allow users to enter the latest techni
 - Model information
 - Supporting technical indicator values
 
-The prototype was developed using **Gradio**.
+The prototype was developed using StreamLit.
 
 ## Technologies
 
 `Python` `Pandas` `NumPy` `Scikit-learn` `Gradient Boosting`  
-`Logistic Regression` `SHAP` `Gradio` `Matplotlib`
+`Logistic Regression` `SHAP` `StreamLit` `Matplotlib`
 
 ## Research Contribution
 
